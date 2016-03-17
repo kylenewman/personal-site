@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kyle Newman - Front End Web Development</title>
+  <link rel="shortcut icon" type="image/x-icon" href="titleIcon.png" />
+  
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/grid12.css" />
+  <link rel="stylesheet" href="css/hovereffects.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <!--JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.big-slide.js"></script> 
+</head>
+  
+<body>
+    
+  <header class="mainNav">
+    <div class="wrap push container">
+      <div class="row">
+        <a href="index.html" class="left"><img class="logo" src="img/logo.png" /></a>
+      <a href="#menu" class="menu-link right"><img src="img/three.png" /></a> 
+      </div>
+    </div>
+  </header>
+  
+  <nav id="menu" class="panel" role="navigation">
+      <img src="img/logoInvert.png" />
+      <ul>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Something?</a></li>
+        <li><a href="#">Something Else?</a></li>
+      </ul>
+      <div class="social">
+        <a href="#"><img src="img/github.png" /></a>
+        <a href="#"><img src="img/dribblbe.png" /></a>
+      </div>
+  </nav>
+  
+  <div class="cta push">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 push wrap">
+        <h1>Hi, I'm Kyle Newman</h1>
+        <h2>Front-End Developer and Designer in Omaha, Nebraska</h2>
+        <a href="#">View Work</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="work wrap push row">
+    <div class="workCol">
+      <img src="img/imgHead.jpg" />
+    </div><div class="workCol">
+      <img src="img/imgOne.jpg" />
+    </div>
+  </div>
+  
+  <footer>
+    <a href="#" class="left"><img src="img/githubdark.png" /></a>
+    <a href="#" class="left"><img src="img/dribbbledark.png" /></a>
+  </footer>
+ 
+  <script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+/***** NAVIGATION PANEL *****/
+
+.panel {
+  position: relative;
+  right: -15.625em; /*left or right and the width of your navigation panel*/
+  width: 15.625em; /*should match the above value*/
+  background-color: #333333;
+  height: 100%;
+  text-align: center;
+  z-index: 100;
+}
+.panel img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.panel ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.panel li {
+  padding: 15px 0;
+  width: 100%;
+  border-top: 1px solid #444444;
+}
+.panel a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'source sans pro', sans-serif;
+  font-size: 18px;
+  padding-left: 23px;
+}
+.social {
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+.social img {
+  display: inline-block;
+  padding: 0 5px;
+  position: relative;
+  bottom: 0;
+}
+.social a {
+  padding-left: 0;
+}
+
+/***** HEADER *****/
+
+header {
+  border-bottom: 10px solid #000;
+  height: 150px;
+  line-height: 150px;
+  padding: 20px;
+}
+header h3 {
+  font-family: 'lato', serif;
+  font-weight: 900;
+  font-size: 50px;
+  display: inline-block;
+  line-height: 50px;
+}
+header a {
+  display: inline-block;
+  vertical-align: middle;
+}
+header a:nth-of-type(1) {
+  padding-right: 20px;
+}
+.mainNav {
+  text-align: center;
+}
+
+/***** CTA *****/
+
+.cta {
+  text-align: center;
+  height: 375px;
+  border-bottom: 10px solid #000;
+}
+h1 {
+  font-size: 55px;
+  font-weight: 900;
+  color: #000;
+  padding-bottom: 10px;
+  padding-top: 110px;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 35px;
+}
+.cta a {
+  padding: 8px 35px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/***** WORK *****/
+
+.workCol {
+  width: 50%;
+  display: inline-block;
+}
+.workCol img {
+  height: 500px;
+}
+
+
+/***** UNIVERSAL *****/
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+}
+body {
+  font-family: 'oswald', sans-serif;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}

@@ -3,7 +3,7 @@
 
 .panel {
   position: relative;
-  right: -15.625em; /*left or right and the width of your navigation panel*/
+  right: -14em; /*left or right and the width of your navigation panel*/
   width: 15.625em; /*should match the above value*/
   background-color: #333333;
   height: 100%;
@@ -31,6 +31,9 @@
   font-size: 18px;
   padding-left: 23px;
 }
+.panel a:hover {
+  color: #cfb53b;
+}
 .social {
   padding-bottom: 15px;
   margin: 0 auto;
@@ -44,6 +47,76 @@
 .social a {
   padding-left: 0;
 }
+#navIcon {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  margin: 21px auto;
+  border: 2px solid #000;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .8s ease-in-out;
+  -moz-transition: .8s ease-in-out;
+  -o-transition: .8s ease-in-out;
+  transition: .8s ease-in-out;
+  cursor: pointer;
+}
+#navIcon span{
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 28px;
+  background: #000;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+#navIcon span:nth-child(1) {
+  top: 21px;
+  left: 16px;
+}
+#navIcon span:nth-child(2),#navIcon span:nth-child(3) {
+  top: 29px;
+  left: 16px;
+}
+#navIcon span:nth-child(4) {
+  top: 37px;
+  left: 16px;
+}
+#navIcon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+#navIcon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#navIcon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#navIcon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
 
 /***** HEADER *****/
 
@@ -52,6 +125,7 @@ header {
   height: 150px;
   line-height: 150px;
   padding: 20px;
+
 }
 header h3 {
   font-family: 'lato', serif;
@@ -74,30 +148,53 @@ header a:nth-of-type(1) {
 /***** CTA *****/
 
 .cta {
+  height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  height: 375px;
-  border-bottom: 10px solid #000;
 }
 h1 {
   font-size: 55px;
   font-weight: 900;
-  color: #000;
-  padding-bottom: 10px;
+  color: #fff;
+  padding-bottom: 20px;
   padding-top: 110px;
 }
-h2 {
+h2, .quest p {
   font-size: 20px;
   font-weight: 300;
-  color: #000;
+  color: #fff;
   margin-bottom: 35px;
 }
-.cta a {
+.quest p {
+  color: 
+}
+.cta img {
+  width: 50px;
+  margin-top: 100px;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+.cta img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.quest a {
   padding: 8px 35px;
   border-radius: 15px;
   border: 2px solid #000;
   color: #000;
   font-weight: 300;
   text-decoration: none;
+}
+.quest a:hover {
+  border: 2px solid #cfb53b;
+  color: #cfb53b;
 }
 
 /***** ICON SECTION *****/
@@ -106,37 +203,41 @@ h2 {
   padding: 75px 0;
 }
 .icon {
-  height: 100px;
-  width: 100px;
+  height: 175px;
+  width: 175px;
   background-color: #000;
   border-radius: 50%;
   text-align: center;
-  line-height: 100px;
+  line-height: 175px;
   display: inline-block;
 }
 .icon img {
-  height: 30px;
+  height: 40px;
   vertical-align: middle;
   display: inline-block;
 }
-.iconInfo {
+.icon {
   display: inline-block;
   margin-left: 25px;
   padding-top: 20px;
 }
-.iconInfo h5 {
+.icon h5 {
   font-weight: 700;
   font-size: 30px;
-  margin-top: 40px;
+  margin-top: 10px;
   padding-bottom: 10px;
-  vertical-align: middle;
 }
-.iconInfo p {
+.icon p {
   font-weight: 300;
 }
 
 
 /***** PORTFOLIO *****/
+
+.portGrid img {
+  width: 100%;
+  border: 1px solid red;
+}
 
 .portfolio {
   padding-top: 75px;
@@ -148,8 +249,17 @@ h3 {
   font-weight: 400;
   padding-bottom: 25px;
 }
+.portfolio p {
+  padding-bottom: 25px;
+}
 
+/***** FOOTER *****/
 
+footer {
+  background-color: #000;
+  padding: 20px 0;
+  margin-top: 60px;
+}
 
 /***** UNIVERSAL *****/
 
@@ -159,6 +269,7 @@ h3 {
 }
 body {
   font-family: 'oswald', sans-serif;
+  text-align: center;
 }
 .right {
   float: right;

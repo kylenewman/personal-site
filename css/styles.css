@@ -1,4 +1,32 @@
 
+/***** UNIVERSAL *****/
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+}
+body {
+  font-family: 'oswald', sans-serif;
+  text-align: center;
+}
+h3 {
+  font-size: 34px;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23px;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
 /***** NAVIGATION PANEL *****/
 
 .panel {
@@ -46,6 +74,27 @@
 }
 .social a {
   padding-left: 0;
+}
+
+
+/***** HEADER *****/
+
+header {
+  border-bottom: 10px solid #000;
+  height: 150px;
+  line-height: 150px;
+  padding: 20px;
+
+}
+header a {
+  display: inline-block;
+  vertical-align: middle;
+}
+header a:nth-of-type(1) {
+  padding-right: 20px;
+}
+.mainNav {
+  text-align: center;
 }
 #navIcon {
   width: 64px;
@@ -118,33 +167,6 @@
   left: 50%;
 }
 
-/***** HEADER *****/
-
-header {
-  border-bottom: 10px solid #000;
-  height: 150px;
-  line-height: 150px;
-  padding: 20px;
-
-}
-header h3 {
-  font-family: 'lato', serif;
-  font-weight: 900;
-  font-size: 50px;
-  display: inline-block;
-  line-height: 50px;
-}
-header a {
-  display: inline-block;
-  vertical-align: middle;
-}
-header a:nth-of-type(1) {
-  padding-right: 20px;
-}
-.mainNav {
-  text-align: center;
-}
-
 /***** CTA *****/
 
 .cta {
@@ -163,7 +185,6 @@ h1 {
   font-weight: 900;
   color: #fff;
   padding-bottom: 20px;
-  padding-top: 110px;
 }
 h2, .quest p {
   font-size: 20px;
@@ -197,61 +218,60 @@ h2, .quest p {
   color: #cfb53b;
 }
 
-/***** ICON SECTION *****/
+/*****  *****/
 
-.description {
-  padding: 75px 0;
-}
-.icon {
-  height: 175px;
-  width: 175px;
-  background-color: #000;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 175px;
-  display: inline-block;
-}
-.icon img {
-  height: 40px;
-  vertical-align: middle;
-  display: inline-block;
-}
-.icon {
-  display: inline-block;
-  margin-left: 25px;
-  padding-top: 20px;
-}
-.icon h5 {
-  font-weight: 700;
-  font-size: 30px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-}
-.icon p {
-  font-weight: 300;
-}
 
 
 /***** PORTFOLIO *****/
 
-.portGrid img {
-  width: 100%;
-  border: 1px solid red;
-}
 
 .portfolio {
-  padding-top: 75px;
-  padding-bottom: 75px;
-  text-align: center;
+  margin: 40px 0;
 }
-h3 {
-  font-size: 30px;
-  font-weight: 400;
-  padding-bottom: 25px;
+.portfolio img {
+  width: 100%;
 }
 .portfolio p {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
+.portRow {
+  margin: 75px 0;
+}
+.workRight {
+  text-align: left;
+}
+.workLeft {
+  text-align: right;
+}
+.tags li {
+  display: inline-block;
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.tags {
+  margin-bottom: 40px;
+}
+.portfolio a {
+  padding: 8px 35px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+}
+.portfolio a:hover {
+  border: 2px solid #cfb53b;
+  color: #cfb53b;
+}
+
+
+
+
 
 /***** FOOTER *****/
 
@@ -261,19 +281,23 @@ footer {
   margin-top: 60px;
 }
 
-/***** UNIVERSAL *****/
 
-.wrap {
-  position: relative;
-  margin: 0 auto;
-}
-body {
-  font-family: 'oswald', sans-serif;
-  text-align: center;
-}
-.right {
-  float: right;
-}
-.left {
-  float: left;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

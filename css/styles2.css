@@ -98,8 +98,7 @@ ul li {
 .form {
   margin: 0 auto;
 }
-/* form starting stylings ------------------------------- */
-.group { 
+.formGroup { 
   position:relative; 
   margin-bottom:60px; 
 }
@@ -116,11 +115,10 @@ input:focus {
 }
 /* LABEL ======================================= */
 label          {
-  color: #000; 
+  color: #888; 
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 300;
   position: absolute;
-  pointer-events: none;
   left: 5px;
   top: 10px;
   transition: 0.4s ease all; 

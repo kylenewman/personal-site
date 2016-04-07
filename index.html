@@ -31,16 +31,22 @@
 
   <body>
 
-    <div class="cta push row">
+    <header id="hero" class="cta push row">
       <h1>Hi, I'm Kyle Newman</h1>
       <h2>Front-End Developer and Designer in Omaha, Nebraska</h2>
       <a href="#pageTop"><img src="img/arrow.png" /></a>
-    </div>
+    </header>
   
-     <header id="pageTop" class="mainNav">
+     <div id="pageTop" class="mainNav">
       <div class="wrap push container">
         <div class="row">
-          <a href="index.html" class="left"><img class="logo" src="img/logo.png" /></a>
+          <div class="logoDark">
+            <a href="index.html" class="left"><img class="logo" src="img/logo.png" /></a>
+          </div>
+          <div class="logoWhite">
+            <a href="#" class="left"><img src="img/logoInvert.png"></a>
+          </div>
+          
           <a href="#menu" class="menu-link right">
             <div id="navIcon">
               <span></span>
@@ -51,7 +57,7 @@
           </a> 
         </div>
       </div>
-    </header>
+    </div>
 
     <nav id="menu" class="panel" role="navigation">
       <img src="img/logoInvert.png" />
@@ -208,6 +214,8 @@
       </div>
       </div>
     </div>
+    
+    <a href="#pageTop" class="toTop"></a>
 
     <footer>
       <div class="container">
@@ -220,6 +228,9 @@
     </footer>
 
     <script src="js/nav.js"></script>
+    <script src="js/to-top.js"></script>
+    <script src="js/sticky-nav.js"></script>
+    <script src="js/shrink-nav.js"></script>
     <script src="js/smooth_scroll.js"></script>
   </body>
 </html>

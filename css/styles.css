@@ -80,23 +80,12 @@ p {
 
 /***** HEADER *****/
 
-header {
-  border-bottom: 10px solid #1a1a1a;
-  height: 150px;
-  line-height: 150px;
-  padding: 20px;
-
-}
-header a {
-  display: inline-block;
-  vertical-align: middle;
-}
-header a:nth-of-type(1) {
-  padding-right: 20px;
-}
-.mainNav {
-  text-align: center;
-  height
+.mainNav, .navShrink {
+  border-bottom: 4px solid #1a1a1a;
+  height: 75px;
+  line-height: 75px;
+  padding:10px;
+  z-index: 100;
 }
 #navIcon {
   width: 64px;
@@ -135,16 +124,16 @@ header a:nth-of-type(1) {
   transition: .5s ease-in-out;
 }
 #navIcon span:nth-child(1) {
-  top: 21px;
-  left: 16px;
+  top: 14px;
+  left: 10px;
 }
-#navIcon span:nth-child(2),#navIcon span:nth-child(3) {
-  top: 29px;
-  left: 16px;
+#navIcon span:nth-child(2), #navIcon span:nth-child(3) {
+  top: 19px;
+  left: 10px;
 }
 #navIcon span:nth-child(4) {
-  top: 37px;
-  left: 16px;
+  top: 24px;
+  left: 10px;
 }
 #navIcon.open span:nth-child(1) {
   top: 18px;
@@ -167,6 +156,70 @@ header a:nth-of-type(1) {
   top: 18px;
   width: 0%;
   left: 50%;
+}
+.navShrink {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  padding: 10px;
+  background-color: #1a1a1a;
+  line-height: 75px;
+}
+.mainNav img {
+  height: 55px;
+}
+#navIcon {
+  width: 41px;
+  height: 41px;
+  position: relative;
+  margin: 7px auto;
+  border: 1px solid #1a1a1a;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.navShrink #navIcon {
+  border: 1px solid #fff;
+}
+#navIcon span{
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 19px;
+  background: #1a1a1a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+.navShrink #navIcon span {
+  background: #fff;
+}
+.mainNav .logoWhite {
+  display: none;
+}
+.navShrink .logoDark {
+  display: none;
+}
+.navShrink .logoWhite {
+  display: inline-block;
+  float: left;
 }
 
 /***** CTA *****/
@@ -229,6 +282,7 @@ h2, .quest p {
 
 .portfolio {
   margin: 40px 0;
+  padding-top: 150px;
 }
 .portfolio img {
   width: 100%;
@@ -336,8 +390,20 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
   width: 100%;
 }
 
+/***** BACK TO TOP *****/
 
-
+a.toTop {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 100;
+  right: 50px;
+  bottom: 30px;
+  background: #1a1a1a url("../img/uparrow.png") no-repeat center;
+  background-size: 50px;
+  border-radius: 30px;
+}
 
 /***** FOOTER *****/
 

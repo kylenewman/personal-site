@@ -5,11 +5,11 @@ $(document).ready( function() {
  var mainNav = $(".mainNav");  
   
    $(window).scroll(function() {
-    if ( $(this).scrollTop() > topOfOthDiv ) {
-      mainNav.addClass("navShrink", 1000);
+    if ( $(this).scrollTop() > heroHeight) {
+      mainNav.addClass("navShrink").fadeIn('slow');
     }
     else {
-      mainNav.removeClass("navShrink", 1000); 
+      mainNav.removeClass("navShrink"); 
     }
   });
 });

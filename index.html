@@ -40,21 +40,23 @@
      <div id="pageTop" class="mainNav">
       <div class="wrap push container">
         <div class="row">
-          <div class="logoDark">
-            <a href="index.html" class="left"><img class="logo" src="img/logo.png" /></a>
-          </div>
-          <div class="logoWhite">
-            <a href="#" class="left"><img src="img/logoInvert.png"></a>
-          </div>
-          
-          <a href="#menu" class="menu-link right">
-            <div id="navIcon">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+          <div class="col-xs-12">
+            <div class="logoDark">
+              <a href="index.html" class="left"><img class="logo" src="img/logo.png" /></a>
             </div>
-          </a> 
+            <div class="logoWhite">
+              <a href="#" class="left"><img src="img/logoInvert.png"></a>
+            </div>
+
+            <a href="#menu" class="menu-link right">
+              <div id="navIcon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </a> 
+          </div>
         </div>
       </div>
     </div>
@@ -62,10 +64,10 @@
     <nav id="menu" class="panel" role="navigation">
       <img src="img/logoInvert.png" />
       <ul>
-        <li><a href="#">Work</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
       <div class="social">
         <a href="#"><img src="img/github.png" /></a>
@@ -76,14 +78,14 @@
     </nav>
     
     <div class="container wrap push">
-      <div class="portfolio">
+      <div id="portfolio" class="portfolio">
         <div class="row portRow">
           <div class="workImg col-sm-5">
             <img src="img/work/mandela.png" />
           </div>
           <div class="col-sm-7 workRight">
             <h3>Nelson Mandela Elementary</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</p>
+            <p>Work within a team of three students to redesign and develop a new website for a local Elementary School. Collaborate through different perspectives to create a modern web presence while utilizing the opportunity to give back to the community.</p>
             <ul class="tags">
               <li>UX/UI Desgin</li>
               <li>Fully Responsive</li>
@@ -92,7 +94,7 @@
               <li>jQuery</li>
               <li>Masonry Gallery</li>
             </ul>
-            <a href="#">View Site</a>
+            <a href="http://nelsonmandelaelementary.org/" target="_blank">View Site</a>
           </div>
         </div>
         <div class="row portRow">
@@ -123,7 +125,7 @@
               <li>Fluid Responsive</li>
               <li>Bootstrap</li>
             </ul>
-            <a href="#">View Site</a>
+            <a href="http://kylenewman.github.io/odin_site" target="_blank">View Site</a>
           </div>
         </div>
         <div class="row portRow">
@@ -138,7 +140,7 @@
               <li>jQuery UI</li>
               <li>parallax.js</li>
             </ul>
-            <a href="#">View Site</a>
+            <a href="http://kylenewman.github.io/jQuery-plugin-practice" target="_blank">View Site</a>
           </div>
           <div class="col-sm-5">
             <img src="img/work/jquery.png" />
@@ -154,7 +156,7 @@
             <ul class="tags">
               <li>Responsive to desktop &amp; mobile</li>
             </ul>
-            <a href="#">View Site</a>
+            <a href="http://kylenewman.github.io/class_repo" target="_blank">View Site</a>
           </div>
         </div>
         <div class="row portRow">
@@ -164,7 +166,7 @@
             <ul class="tags">
               <li>Build with pure JavaScript</li>
             </ul>
-            <a href="#">View Site</a>
+            <a href="http://kylenewman.github.io/ToDo-App" target="_blank">View Site</a>
           </div>
           <div class="col-sm-5">
             <img src="img/work/todo.png" />
@@ -183,7 +185,7 @@
               <li>JavaScript</li>
               <li>jQuery</li>
             </ul>
-            <a href="#">View Site</a>
+            <a href="http://uniquesalonandspa.com" target="_blank">View Site</a>
           </div>
         </div>
       </div>
@@ -215,7 +217,19 @@
       </div>
     </div>
     
-    <a href="#pageTop" class="toTop"></a>
+    <div id="about" class="container wrap push">
+      <div class="about row">
+        <div class="col-sm-2 col-sm-offset-2">
+          <img src="img/temp_pro.jpg" />
+        </div>
+        <div class="col-sm-6">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nis</p>
+        </div>
+      </div>
+    </div>
+    
+    <a href="#portfolio" class="toTop"></a>
 
     <footer>
       <div class="container">

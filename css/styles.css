@@ -88,6 +88,7 @@ p {
   height: 105px;
   line-height: 105px;
   padding: 10px 0;
+  width: 100%;
   -webkit-transition: height 0.8s;
   -moz-transition: height 0.8s;
   transition: height 0.8s;
@@ -215,10 +216,10 @@ p {
   height: 1px;
   width: 21px;
   background: #fff;
-  -webkit-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 .mainNav .logoWhite {
   display: none;
@@ -289,9 +290,11 @@ h2, .quest p {
 /***** PORTFOLIO *****/
 
 
-.portfolio {
-  margin: 40px 0;
-  padding-top: 40px;
+.portfolio,
+.about,
+.contact,
+.skilss {
+  padding-top: 90px;
 }
 .portfolio img {
   width: 100%;
@@ -398,6 +401,21 @@ input:focus ~ label, input:valid ~ label     {
 input:focus ~ .bar:before, input:focus ~ .bar:after {
   width: 100%;
 }
+
+/***** ABOUT *****/
+
+.about {
+  margin: 80px 0;
+}
+.about img {
+  width: 100%;
+  border-radius: 50%;
+}
+.about p {
+  text-align: left;
+  padding: 5px 0;
+}
+
 
 /***** BACK TO TOP *****/
 

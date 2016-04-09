@@ -345,18 +345,17 @@ h2, .quest p {
 
 /***** SKILLS *****/
 
-.skills h4, .skills2 h4 {
+.skills h4 {
   padding-bottom: 7px;
   font-weight: 700;
   font-size: 24px;
 }
-.skills p, .skills2 p {
+.skills p {
   line-height: 26px;
+  padding-bottom: 15px;
 }
 .skills {
   padding-bottom: 75px;
-}
-.skills2 {
   text-align: left;
 }
 .skills2 p {

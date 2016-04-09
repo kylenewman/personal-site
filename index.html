@@ -9,6 +9,7 @@
 
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300' rel='stylesheet' type='text/css'>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -31,11 +32,13 @@
 
   <body>
 
-    <header id="hero" class="cta push row">
-      <h1>Hi, I'm Kyle Newman</h1>
-      <h2>Front-End Developer and Designer in Omaha, Nebraska</h2>
-      <a href="#pageTop"><img src="img/arrow.png" /></a>
-    </header>
+    <div id="gradient">
+      <div id="hero" class="cta push row">
+        <h1>Hi, I'm Kyle Newman</h1>
+        <h2>Front-End Developer and Designer in Omaha, Nebraska</h2>
+        <a href="#pageTop"><img src="img/arrow.png" /></a>
+      </div>
+    </div>
   
      <div id="pageTop" class="mainNav">
       <div class="wrap push container">
@@ -65,15 +68,16 @@
       <img src="img/logoInvert.png" />
       <ul>
         <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#">Skills</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
       </ul>
       <div class="social">
-        <a href="#"><img src="img/github.png" /></a>
-        <a href="#"><img src="img/dribblbe.png" /></a>
-        <a href="#"><img src="img/linkedin.png" /></a>
-        <a href="#"><img src="img/instagram.png" /></a>
+        <a href="https://github.com/kylenewman" target="_blank"><img src="img/github.png" /></a>
+        <a href="https://dribbble.com/kylenewman" target="_blank"><img src="img/dribblbe.png" /></a>
+        <a href="https://www.linkedin.com/in/kyle-newman-305521114
+" target="_blank"><img src="img/linkedin.png" /></a>
+        <a href="https://www.instagram.com/kylenewman/" target="_blank"><img src="img/instagram.png" /></a>
       </div>
     </nav>
     
@@ -190,9 +194,33 @@
         </div>
       </div>
     </div>
+    
+    <div class="container wrap push">
+      <div class="skills2 row">
+        <div class="col-sm-1 col-sm-offset-2 skillIcon">
+          <img src="img/bracket.png" />
+        </div>
+        <div class="col-sm-3">
+          <h4>Languages</h4>
+          <p>HTML5, CSS3, JavaScript</p>
+          <h4>Frameworks</h4>
+          <p>jQuery, Bootstrap, parallax.js, pace.js, jQuery UI, jQuery Validate</p>
+          <h4>Other Skills</h4>
+          <p>Responsive Web Design, Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
+        </div>
+        <div class="col-sm-1 col-sm-offset-1 skillIcon">
+          <img src="img/cap.png" />
+        </div>
+        <div class="col-sm-3">
+          <h4>Education</h4>
+          <p>2016 Graduate of Interface Web School, Omaha, NE</p>
+          <p>Associates of Applied Science in Graphic Communications</p>
+        </div>
+      </div>
+    </div>
 
     <div id="contact" class="container wrap push">
-      <div class="row">
+      <div class="contact row">
       <div class="quest">
         <h3>Got a Project? Let's work together!</h3>
         <form class="col-sm-8 col-sm-offset-2">  
@@ -233,18 +261,19 @@
 
     <footer>
       <div class="container">
-        <a href="#" class="lef"><img src="img/github.png" /></a>
-        <a href="#" class="lef"><img src="img/dribblbe.png" /></a>
-        <a href="#" class="let"><img src="img/linkedin.png" /></a>
-        <a href="#" class="let"><img src="img/instagram.png" /></a>
+        <a href="https://github.com/kylenewman" target="_blank"><img src="img/github.png" /></a>
+        <a href="https://dribbble.com/kylenewman" target="_blank"><img src="img/dribblbe.png" /></a>
+        <a href="https://www.linkedin.com/in/kyle-newman-305521114
+" target="_blank"><img src="img/linkedin.png" /></a>
+        <a href="https://www.instagram.com/kylenewman/" target="_blank"><img src="img/instagram.png" /></a>
         <p>&copy;2016 Kyle Newman</p>
       </div>
     </footer>
 
     <script src="js/nav.js"></script>
     <script src="js/to-top.js"></script>
-<!--    <script src="js/sticky-nav.js"></script>-->
     <script src="js/shrink-nav.js"></script>
+    <script src="js/gradient.js"></script>
     <script src="js/smooth_scroll.js"></script>
   </body>
 </html>

@@ -16,10 +16,12 @@ h3 {
   padding-top: 15px;
   padding-bottom: 20px;
 }
-p {
+p, h2 {
+  font-family: 'source sans pro', sans-serif;
+  font-weight: 300;
   font-size: 18px;
   font-weight: 300;
-  line-height: 23px;
+  line-height: 25px;
 }
 .right {
   float: right;
@@ -76,7 +78,6 @@ p {
 .social a {
   padding-left: 0;
 }
-
 
 /***** NAVIGATION BAR *****/
 
@@ -234,9 +235,15 @@ p {
 
 /***** CTA *****/
 
+#gradient {
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+}
 .cta {
   height: 100vh;
-  background-image: url(../img/bg.jpg);
+  background-image: url(../img/bg.png);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -246,7 +253,7 @@ p {
   text-align: center;
 }
 h1 {
-  font-size: 55px;
+  font-size: 65px;
   font-weight: 900;
   color: #fff;
   padding-bottom: 20px;
@@ -283,10 +290,6 @@ h2, .quest p {
   color: #cfb53b;
 }
 
-/*****  *****/
-
-
-
 /***** PORTFOLIO *****/
 
 
@@ -294,7 +297,7 @@ h2, .quest p {
 .about,
 .contact,
 .skilss {
-  padding-top: 90px;
+  padding-top: 150px;
 }
 .portfolio img {
   width: 100%;
@@ -303,7 +306,7 @@ h2, .quest p {
   padding-bottom: 20px;
 }
 .portRow {
-  margin: 75px 0;
+  margin: 150px 0;
 }
 .workRight {
   text-align: left;
@@ -340,6 +343,41 @@ h2, .quest p {
   color: #cfb53b;
 }
 
+/***** SKILLS *****/
+
+.skills h4, .skills2 h4 {
+  padding-bottom: 7px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.skills p, .skills2 p {
+  line-height: 26px;
+}
+.skills {
+  padding-bottom: 75px;
+}
+.skills2 {
+  text-align: left;
+}
+.skills2 p {
+  padding-bottom: 15px;
+}
+.skillIcon {
+  background-color: #1a1a1a;
+  border-radius: 50%;
+  text-align: center;
+  height: 65px;
+  width: 65px;
+  line-height: 65px;
+}
+.skillIcon img {
+  width: 90%;
+  vertical-align: middle;
+}
+.skillInfo {
+  padding-left: 10px;
+}
+
 /***** CONTACT *****/
 
 .quest h3 {
@@ -366,6 +404,7 @@ input:focus {
 label          {
   color: #888; 
   font-size: 18px;
+  font-family: 'source sans pro', sans-serif;
   font-weight: 300;
   position: absolute;
   left: 5px;
@@ -401,6 +440,7 @@ input:focus ~ label, input:valid ~ label     {
 input:focus ~ .bar:before, input:focus ~ .bar:after {
   width: 100%;
 }
+
 
 /***** ABOUT *****/
 

@@ -385,6 +385,14 @@ h2,
 .skillInfo {
   padding-left: 10px;
 }
+.skills a {
+  color: #1a1a1a;
+  font-style: italic;
+  text-decoration: none;
+}
+.skills a:hover {
+  color: #cfb53b;
+}
 
 /***** CONTACT *****/
 
@@ -420,7 +428,8 @@ label          {
   transition: 0.4s ease all; 
   cursor: text;
 }
-input:focus ~ label, input:valid ~ label     {
+input:focus ~ label,
+input:valid ~ label     {
   top: -20px;
   font-size: 14px;
   color: #1a1a1a;
@@ -430,7 +439,8 @@ input:focus ~ label, input:valid ~ label     {
   display: block; 
   width: 100%; 
 }
-.bar:before, .bar:after   {
+.bar:before,
+.bar:after   {
   content:'';
   height: 2px; 
   width: 0;
@@ -445,7 +455,8 @@ input:focus ~ label, input:valid ~ label     {
 .bar:after {
   right: -1000%; 
 }
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
   width: 100%;
 }
 
@@ -509,8 +520,24 @@ footer p {
     width: 60%;
   }
   .workRight,
-  .workLeft {
+  .workLeft,
+  .skills,
+  .about p {
     text-align: center;
+  }
+  .skills {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .skills p:nth-of-type(4) {
+    padding-bottom: 5px;
+  }
+  .skillIcon {
+    display: none;
+  }
+  .about img {
+    width: 40%;
+    padding-bottom: 10px;
   }
 } 
 @media all and (max-width: 450px) {
@@ -530,6 +557,9 @@ footer p {
   }
   .portRow {
     margin: 75px 0;
+  }
+  .about img {
+    width: 70%;
   }
   a.toTop {
     width: 40px;

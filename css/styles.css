@@ -29,6 +29,10 @@ h2 {
 .left {
   float: left;
 }
+.row {
+  width: 100%;
+  margin: 0;
+}
 
 /***** NAVIGATION PANEL *****/
 
@@ -68,15 +72,22 @@ h2 {
 .social {
   padding-bottom: 15px;
   margin: 0 auto;
+  position: fixed;
+  bottom: 5px;
 }
 .social img {
   display: inline-block;
   padding: 0 5px;
   position: relative;
   bottom: 0;
+  height: 32px;
+  margin: 0;
 }
 .social a {
   padding-left: 0;
+}
+.social a:first-child {
+  margin-left: 22px;
 }
 
 /***** NAVIGATION BAR *****/
@@ -245,6 +256,7 @@ h2 {
 }
 .cta {
   height: 100vh;
+  width: 100%;
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: center center;
@@ -259,6 +271,7 @@ h1 {
   font-weight: 900;
   color: #fff;
   padding-bottom: 20px;
+  line-height: 45px;
 }
 h2, 
 .quest p {
@@ -299,10 +312,9 @@ h2,
 /***** PORTFOLIO *****/
 
 .portfolio,
-.about,
 .contact,
 .skills {
-  padding-top: 150px;
+  padding: 150px 0;
 }
 .portfolio img {
   width: 100%;
@@ -352,9 +364,20 @@ h2,
   border: 2px solid #cfb53b;
   color: #cfb53b;
 }
+.workLeft span,
+.workRight span {
+  font-style: italic;
+}
 
 /***** SKILLS *****/
 
+#skills {
+  background-color: #1a1a1a;
+  color: #fff;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  width: 100%;
+}
 .skills h4 {
   padding-bottom: 7px;
   font-weight: 700;
@@ -371,7 +394,7 @@ h2,
   padding-bottom: 15px;
 }
 .skillIcon {
-  background-color: #1a1a1a;
+  background-color: #fff;
   border-radius: 50%;
   text-align: center;
   height: 65px;
@@ -386,12 +409,11 @@ h2,
   padding-left: 10px;
 }
 .skills a {
-  color: #1a1a1a;
-  font-style: italic;
+  color: #cfb53b;
   text-decoration: none;
 }
 .skills a:hover {
-  color: #cfb53b;
+  color: #fff;
 }
 
 /***** CONTACT *****/
@@ -462,13 +484,39 @@ input:focus ~ .bar:after {
 
 /***** ABOUT *****/
 
+
+.aboutPic {
+  background-image: url(../img/temp_pro.jpg);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.hoverPic {
+  background-image: url(../img/gimli.jpg);
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
 .about img {
   width: 100%;
   border-radius: 50%;
 }
 .about p {
   text-align: left;
-  padding: 5px 0;
+  padding: 15px 0;
+}
+.about a {
+  text-decoration: none;
+  color: #cfb53b;
+}
+.about a:hover {
+  color: #333333;
 }
 
 /***** BACK TO TOP *****/
@@ -479,7 +527,8 @@ a.toTop {
   height: 60px;
   position: fixed;
   z-index: 100;
-  right: 50px;
+  margin-right: 50px;
+  right: 50px; 
   bottom: 30px;
   background: #1a1a1a url("../img/uparrow.png") no-repeat center;
   background-size: 50px;
@@ -490,13 +539,16 @@ a.toTop {
 
 footer {
   background-color: #1a1a1a;
-  padding: 20px 0 40px;
+  padding: 20px 0 50px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+footer img {
+  height: 32px;
 }
 footer a {
   padding: 0 5px;
@@ -535,6 +587,10 @@ footer p {
   .skillIcon {
     display: none;
   }
+  .aboutPic,
+  .hoverPic {
+    margin: 0 auto;
+  }
   .about img {
     width: 40%;
     padding-bottom: 10px;
@@ -552,6 +608,9 @@ footer p {
   h2 {
     font-size: 16px;
   }
+  .cta img {
+    margin-top: 25px;
+  }
   .portfolio img {
     width: 80%;
   }
@@ -564,7 +623,7 @@ footer p {
   a.toTop {
     width: 40px;
     height: 40px;
-    right: 20px;
+    margin-right: 20px;
     bottom: 20px;
   }
 }

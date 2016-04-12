@@ -18,16 +18,6 @@
 
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/jquery.big-slide.js"></script> 
-    <script>
-      $(document).ready(function() {
-          $('.menu-link').bigSlide({
-            'side': 'right',
-            'menuWidth': '14em',
-            'speed': '800',
-          });
-      });
-    </script>
   </head>
 
   <body>
@@ -37,7 +27,7 @@
         <div class="col-sm-12">
           <h1>Hi, I'm Kyle Newman</h1>
           <h2>Front-End Developer and Designer in Omaha, Nebraska</h2>
-          <a href="#portfolio"><img src="img/arrow.png" /></a>
+          <a href="#portfolio" title="Site Content"><img src="img/arrow.png" alt="View Site" /></a>
         </div>
       </div>
     </div>
@@ -47,13 +37,13 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="logoDark">
-              <a href="index.html" class="left"><img class="logo" src="img/logo.png" /></a>
+              <a href="#portfolio" title ="Home" class="left"><img class="logo" src="img/logo.png" alt="logo"/></a>
             </div>
             <div class="logoWhite">
-              <a href="#" class="left"><img src="img/logoInvert.png"></a>
+              <a href="#portfolio" title="Home" class="left"><img src="img/logoInvert.png" alt="logo"></a>
             </div>
 
-            <a href="#menu" class="menu-link right">
+            <a href="#menu" title="Navigation Toggle" class="menu-link right">
               <div id="navIcon">
                 <span></span>
                 <span></span>
@@ -67,19 +57,19 @@
     </div>
 
     <nav id="menu" class="panel" role="navigation">
-      <img src="img/logoInvert.png" />
+      <img src="img/logoInvert.png" alt="logo" />
       <ul>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio" title="Examples of Work">Portfolio</a></li>
+        <li><a href="#skills" title="List of Skills">Skills</a></li>
+        <li><a href="#contact" title="Contact Kyle Newman">Contact</a></li>
+        <li><a href="#about" title="About Kyle Newman">About</a></li>
       </ul>
       <div class="social">
-        <a href="https://github.com/kylenewman" target="_blank"><img src="img/github.png" /></a>
-        <a href="https://dribbble.com/kylenewman" target="_blank"><img src="img/dribbble.png" /></a>
+        <a href="https://github.com/kylenewman" target="_blank" title="Kyle Newman's GitHub account"><img src="img/github.png" alt="GitHub"/></a>
+        <a href="https://dribbble.com/kylenewman" target="_blank" title="Kyle Newman's Dribbble profile"><img src="img/dribbble.png" alt="Dribbble"/></a>
         <a href="https://www.linkedin.com/in/kyle-newman-305521114
-" target="_blank"><img src="img/linkedin.png" /></a>
-        <a href="https://www.instagram.com/kylenewman/" target="_blank"><img src="img/instagram.png" /></a>
+" target="_blank" title="Kyle Newman's LinkedIn page"><img src="img/linkedin.png" alt="LinkedIn"/></a>
+        <a href="https://www.instagram.com/kylenewman/" target="_blank" title="Kyle Newman's Instagram profile"><img src="img/instagram.png" alt="Instagram" /></a>
       </div>
     </nav>
     
@@ -88,7 +78,7 @@
       <div id="portfolio" class="portfolio">
         <div class="row portRow">
           <div class="workImg col-sm-5">
-            <img src="img/work/mandela.png" />
+            <img src="img/work/mandela.png" alt="Nelson Mandela Elementary" />
           </div>
           <div class="col-sm-7 workRight">
             <h3>Nelson Mandela Elementary</h3>
@@ -101,12 +91,12 @@
               <li>jQuery</li>
               <li>Masonry Gallery</li>
             </ul>
-            <a href="http://nelsonmandelaelementary.org/" target="_blank">View Site</a>
+            <a href="http://nelsonmandelaelementary.org/" title="Nelson Mandela Elementary's Website" target="_blank">View Site</a>
           </div>
         </div>
         <div class="row portRow">
           <div class="col-sm-5 imgMobile">
-            <img src="img/work/donners.png" />
+            <img src="img/work/donners.png" alt="Donner's Bay Resort" />
           </div>
           <div class="col-sm-7 workLeft">
             <h3>Donner's Bay Resort</h3>
@@ -118,15 +108,15 @@
               <li>JavaScript</li>
               <li>jQuery</li>
             </ul>
-            <a href="#">View Site</a>
+            <a href="https://github.com/kylenewman/Donners-Bay" title="Donner's Bay Resort's Website" target="_blank">View Site</a>
           </div>
           <div class="col-sm-5 imgDesktop">
-            <img src="img/work/donners.png" />
+            <img src="img/work/donners.png" alt="Donner's Bay Resort"/>
           </div>
         </div>
         <div class="row portRow">
           <div class="workImg col-sm-5">
-            <img src="img/work/odin.png" />
+            <img src="img/work/odin.png" alt="Odin Newsletter"/>
           </div>
           <div class="col-sm-7 workRight">
             <h3>Odin Newsletter</h3>
@@ -135,12 +125,12 @@
               <li>Fluid Responsive</li>
               <li>Bootstrap</li>
             </ul>
-            <a href="http://kylenewman.github.io/odin_site" target="_blank">View Site</a>
+            <a href="http://kylenewman.github.io/odin_site" title="Odin Newsletter Website" target="_blank">View Site</a>
           </div>
         </div>
         <div class="row portRow">
           <div class="col-sm-5 imgMobile">
-            <img src="img/work/jquery.png" />
+            <img src="img/work/jquery.png" alt="jQuery Practice Site" />
           </div>
           <div class="col-sm-7 workLeft">
             <h3>jQuery Practice Site</h3>
@@ -153,15 +143,15 @@
               <li>jQuery UI</li>
               <li>parallax.js</li>
             </ul>
-            <a href="http://kylenewman.github.io/jQuery-plugin-practice" target="_blank">View Site</a>
+            <a href="http://kylenewman.github.io/jQuery-plugin-practice" title="jQuery Practice Website" target="_blank">View Site</a>
           </div>
           <div class="col-sm-5 imgDesktop">
-            <img src="img/work/jquery.png" />
+            <img src="img/work/jquery.png" alt="jQuery Practice Site" />
           </div>
         </div>
         <div class="row portRow">
           <div class="workImg col-sm-5">
-            <img src="img/work/sixteen.png" />
+            <img src="img/work/sixteen.png" alt="Sixteen Creative Agency"/>
           </div>
           <div class="col-sm-7 workRight">
             <h3>Sixteen Creative Agency</h3>
@@ -169,28 +159,28 @@
             <ul class="tags">
               <li>Responsive to desktop &amp; mobile</li>
             </ul>
-            <a href="http://kylenewman.github.io/class_repo" target="_blank">View Site</a>
+            <a href="http://kylenewman.github.io/class_repo" title="Sixteen Creative Agencies Website" target="_blank">View Site</a>
           </div>
         </div>
         <div class="row portRow">
           <div class="col-sm-5 imgMobile">
-            <img src="img/work/todo.png" />
+            <img src="img/work/todo.png" alt="To-Do App" />
           </div>
           <div class="col-sm-7 workLeft">
-            <h3>ToDo App</h3>
+            <h3>To-Do App</h3>
             <p>Class Project: Goal of the assignment was to create a classic To Do App that would showcase a task, due date, and priority without the help of any framworks or libraries. Just pure JavaScript.</p>
             <ul class="tags">
               <li>Build with pure JavaScript</li>
             </ul>
-            <a href="http://kylenewman.github.io/ToDo-App" target="_blank">View Site</a>
+            <a href="http://kylenewman.github.io/ToDo-App" title="To-Do App Website" target="_blank">View Site</a>
           </div>
           <div class="col-sm-5 imgDesktop">
-            <img src="img/work/todo.png" />
+            <img src="img/work/todo.png" alt="To-Do App"/>
           </div>
         </div>
         <div class="row portRow portRowLast">
           <div class="workImg col-sm-5">
-            <img src="img/work/unique.png" />
+            <img src="img/work/unique.png" alt="Unique Salon and Spa"/>
           </div>
           <div class="col-sm-7 workRight">
             <h3>Unique Salon and Spa</h3>
@@ -201,7 +191,7 @@
               <li>JavaScript</li>
               <li>jQuery</li>
             </ul>
-            <a href="http://uniquesalonandspa.com" target="_blank">View Site</a>
+            <a href="http://uniquesalonandspa.com" title="Unique Salon and Spa's Website" target="_blank">View Site</a>
           </div>
         </div>
       </div>
@@ -210,7 +200,7 @@
     <div id="skills" class="container wrap push">
       <div class="skills row">
         <div class="col-sm-1 col-sm-offset-2 skillIcon">
-          <img src="img/computer.png" />
+          <img src="img/computer.png" alt="Code Brackets"/>
         </div>
         <div class="col-sm-3">
           <h4>Languages</h4>
@@ -221,11 +211,11 @@
           <p>Responsive Web Design, Adobe Photoshop, Adobe Illustrator, Adobe InDesign</p>
         </div>
         <div class="col-sm-1 col-sm-offset-1 skillIcon">
-          <img src="img/education.png" />
+          <img src="img/education.png" alt="Graduation Cap" />
         </div>
         <div class="col-sm-3">
           <h4>Education</h4>
-          <p>2016 Graduate of <a href="https://interfaceschool.com/" target="_blank">Interface Web School</a> in Omaha, NE</p>
+          <p>2016 Graduate of <a href="https://interfaceschool.com/" title="Interface Web School Website" target="_blank">Interface Web School</a> in Omaha, NE</p>
           <p>Associates of Applied Science in Graphic Communications</p>
         </div>
       </div>
@@ -263,23 +253,25 @@
 
         </div>
         <div class="col-sm-6">
-          <p>Hi! I'm Kyle Newman. A front-end web developer and graphic designer in Omaha, Nebraska. I'm all about music, the Boston Red Sox, and my bulldog, <a href="#aboutHover" id="hover">Gimli</a></p>
+          <p>Hi! I'm Kyle Newman. A front-end web developer and graphic designer in Omaha, Nebraska. I'm all about music, the Boston Red Sox, and my bulldog, <a href="#aboutHover" title="Bulldog!" id="hover">Gimli</a></p>
         </div>
       </div>
     </div>
     
-    <a href="#portfolio" class="toTop wrap push"></a>
+    <a href="#portfolio" title="to top of page" class="toTop wrap push"></a>
 
     <footer>
       <div class="container">
-        <a href="https://github.com/kylenewman" target="_blank"><img src="img/github.png" /></a>
-        <a href="https://dribbble.com/kylenewman" target="_blank"><img src="img/dribbble.png" /></a>
-        <a href="https://www.linkedin.com/in/kyle-newman-305521114
-" target="_blank"><img src="img/linkedin.png" /></a>
-        <a href="https://www.instagram.com/kylenewman/" target="_blank"><img src="img/instagram.png" /></a>
+        <a href="https://github.com/kylenewman" title="Kyle Newman's GitHub account" target="_blank"><img src="img/github.png" alt="GitHub"/></a>
+        <a href="https://dribbble.com/kylenewman" title="Kyle Newman's Dribbble profile" target="_blank"><img src="img/dribbble.png" alt="Dribbble"/></a>
+        <a href="https://www.linkedin.com/in/kyle-newman-305521114" title="Kyle Newman's LinkedIn page" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"/></a>
+        <a href="https://www.instagram.com/kylenewman/" title="Kyle Newman's Instagram profile" target="_blank"><img src="img/instagram.png" alt="Instagram"/></a>
+        <p>Site designed and developed by Kyle Newman</p>
       </div>
     </footer>
 
+    <script src="js/jquery.big-slide.js"></script> 
+    <script src="js/bigSlideCall.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/to-top.js"></script>
     <script src="js/shrink-nav.js"></script>

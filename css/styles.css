@@ -21,7 +21,7 @@ h2 {
   font-weight: 300;
   font-size: 18px;
   font-weight: 300;
-  line-height: 25px;
+  line-height: 27px;
 }
 .right {
   float: right;
@@ -480,6 +480,9 @@ input:valid ~ label     {
 input:focus ~ .bar:before,
 input:focus ~ .bar:after {
   width: 100%;
+}
+.contact {
+  overflow: hidden;
 }
 
 /***** ABOUT *****/

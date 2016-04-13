@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kyle Newman - Front End Web Development</title>
     <link rel="shortcut icon" type="image/x-icon" href="titleIcon.png" />
@@ -56,7 +57,7 @@
       </div>
     </div>
 
-    <nav id="menu" class="panel" role="navigation">
+    <nav id="menu" class="panel">
       <img src="img/logoInvert.png" alt="logo" />
       <ul>
         <li><a href="#portfolio" title="Examples of Work">Portfolio</a></li>
@@ -225,19 +226,19 @@
       <div class="contact row">
       <div class="quest">
         <h3>Got a Project? Let's work together!</h3>
-        <form class="col-sm-8 col-sm-offset-2">  
+        <form method="post" name="contact_form" action="contact-form-handler.php" class="col-sm-8 col-sm-offset-2">  
           <div class="formGroup">      
-            <input id="name" type="text" required>
+            <input id="name" type="text" name="name" required>
             <span class="bar"></span>
             <label for="name">Name</label>
           </div>
           <div class="formGroup">      
-            <input id="text" type="text" required>
+            <input id="text" type="text" name="email" required>
             <span class="bar"></span>
             <label for="text">Email Address</label>
           </div>
           <div class="formGroup">      
-            <input id="message" type="text" required>
+            <input id="message" type="text" name="message" required>
             <span class="bar"></span>
             <label for="message">Message</label>
           </div>
